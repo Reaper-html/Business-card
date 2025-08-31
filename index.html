@@ -87,31 +87,25 @@
     }
 
    .lang-switch {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: transparent;
-  border: 2px solid #b45ad7;
-  color: #b873ff;
-  font-size: 0.75rem;
-  padding: 4px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 0 8px #bd5dd2, 0 0 12px #723685;
-  transition: 0.3s;
-  font-weight: bold;
-}
-
-.lang-switch:hover {
-  background-color: #6b1ab7;
-  color: white;
-  box-shadow: 0 0 15px #9c4de1, 0 0 25px #b45ad7
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: transparent;
+      border: 2px solid #b45ad7;
+      color: #b873ff;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 8px #bd5dd2, 0 0 12px #723685;
+      transition: 0.3s;
+      font-weight: bold;
     }
 
     .lang-switch:hover {
       background-color: #6b1ab7;
       color: white;
-      box-shadow: 0 0 15px #9c4de1;
+      box-shadow: 0 0 15px #9c4de1, 0 0 25px #b45ad7;
     }
 
     @media (max-width: 600px) {
@@ -128,7 +122,7 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbP_pj5BUi_2QXvhgKbldaeOqoNye5z4HuQ&s" alt="фото" />
     <h1 id="title">Я Reaper</h1>
     <p id="desc">Начинающий фронтенд-разработчик. Делаю стильные сайты под ваш вкус, могу сам добавить идеи.</p>
-    <h5 id="extra">Любой каприз за ваши деньги)</h5>
+    <h5 id="extra">Любой каприз за ваши деньги&#128516;</h5>
     <a class="button" href="https://t.me/Timpro509" target="_blank" id="button">Написать в Telegram</a>
   </div>
 
@@ -143,12 +137,11 @@
       en: {
         title: "I'm Reaper",
         desc: "Junior frontend developer. I make stylish websites and can offer my own creative ideas.",
-        extra: "Any whim for your money :)",
+        extra: "Any whim for your money )",
         button: "Message me on Telegram"
       }
     };
-
-    let currentLang = "ru";
+let currentLang = "ru";
     function switchLang() {
       currentLang = currentLang === "ru" ? "en" : "ru";
       const t = langData[currentLang];
